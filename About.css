@@ -1,0 +1,107 @@
+nav {
+    background-color: #0c0c0c; /* Optional: Add background for the nav */
+    padding: 1rem; /* Padding for the nav */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    position: relative; /* For pseudo-element positioning */
+}
+
+nav ul li a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Added padding for better click area */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #00d4ff; /* Underline for active link */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #0c0c0c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #00d4ff;
+}
+
+h1 {
+    color: #00d4ff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #00d4ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
